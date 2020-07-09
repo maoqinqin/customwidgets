@@ -43,6 +43,6 @@
 		}
 	}
 
-customElements.define("com-demo-box-sps", BoxSps);
+	customElements.define("com-demo-box-sps", BoxSps);
 
 })();
