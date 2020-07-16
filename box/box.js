@@ -100,6 +100,7 @@
 		  
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
+			console.log('vonCustomWidgetBeforeUpdatealue', this._props, changedProperties);
 			this._props = { ...this._props, ...changedProperties };
 		}
 
@@ -118,6 +119,10 @@
 			
 			console.log('this.$value', this.$value);
 			this.render(this.$value, this.$info, this.$color);
+		}
+
+		onCustomWidgetResize(value){
+			console.log('value', value);
 		}
 	}	
 	customElements.define("com-demo-gauge", Box);
