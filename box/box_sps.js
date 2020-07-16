@@ -10,7 +10,7 @@
 						<td><input id="sps_color" type="text" size="40" maxlength="40"></td>
 					</tr>
 				</table>
-				<input type="submit" style="display:none;">
+				<input type="submit">
 			</fieldset>
 		</form>
 	`;

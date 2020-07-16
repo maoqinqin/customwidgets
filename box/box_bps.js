@@ -14,7 +14,7 @@
 						<td><input id="bps_value" type="text" size="10" maxlength="3"></td>
 					</tr>
 				</table>
-				<input type="submit" style="display:none;">
+				<input type="submit">
 			</fieldset>
 		</form>
 		<style>
