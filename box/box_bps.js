@@ -9,6 +9,10 @@
 						<td>Color</td>
 						<td><input id="bps_color" type="text" size="10" maxlength="10"></td>
 					</tr>
+					<tr>
+						<td>Percentage</td>
+						<td><input id="bps_percentage" type="text" size="10" maxlength="3"></td>
+					</tr>
 				</table>
 				<input type="submit" style="display:none;">
 			</fieldset>
@@ -46,6 +50,14 @@
 
 		get color() {
 			return this._shadowRoot.getElementById("bps_color").value;
+		}
+
+		set percentage(newPercentage) {
+			this._shadowRoot.getElementById("bps_percentage").value = newPercentage;
+		}
+
+		get percentage() {
+			return this._shadowRoot.getElementById("bps_percentage").value;
 		}
 	}
 
