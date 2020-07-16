@@ -1,7 +1,7 @@
 (function()  {
 	let template = document.createElement("template");
 	template.innerHTML = `
-		<form id="form">
+		<form id="formBps">
 			<fieldset>
 				<legend>Color Properties</legend>
 				<table>
@@ -26,7 +26,7 @@
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
 			this._shadowRoot.appendChild(template.content.cloneNode(true));
-			this._shadowRoot.getElementById("form").addEventListener("submit", this._submit.bind(this));
+			this._shadowRoot.getElementById("formBps").addEventListener("submit", this._submit.bind(this));
 		}
 
 		_submit(e) {
