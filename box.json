@@ -74,7 +74,23 @@
             "returnType": "number",
             "description": "Returns the Gauge value.",
             "body": "return this.value;"
-        }
+        },
+        "setColor": {
+			"description": "Sets the background color.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new background color"
+				}
+			],
+			"body": "this.color = newColor;"
+		},
+		"getColor": {
+			"returnType": "string",
+			"description": "Returns the background color.",
+			"body": "return this.color;"
+		}
     },
     "events": {
         "onClick": {
