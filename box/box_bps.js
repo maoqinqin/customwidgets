@@ -11,7 +11,7 @@
 					</tr>
 					<tr>
 						<td>Percentage</td>
-						<td><input id="bps_percentage" type="text" size="10" maxlength="3"></td>
+						<td><input id="bps_value" type="text" size="10" maxlength="3"></td>
 					</tr>
 				</table>
 				<input type="submit" style="display:none;">
@@ -52,12 +52,12 @@
 			return this._shadowRoot.getElementById("bps_color").value;
 		}
 
-		set percentage(newPercentage) {
-			this._shadowRoot.getElementById("bps_percentage").value = newPercentage;
+		set value(newValue) {
+			this._shadowRoot.getElementById("bps_value").value = newValue;
 		}
 
-		get percentage() {
-			return this._shadowRoot.getElementById("bps_percentage").value;
+		get value() {
+			return this._shadowRoot.getElementById("bps_value").value;
 		}
 	}
 
