@@ -116,9 +116,13 @@
 			if ("color" in changedProperties) {
 				this.$color = changedProperties["color"];
 			}
+
+			if ("price" in changedProperties) {
+				this.$price = changedProperties["price"];
+			}
 			
 			console.log('this.$value', this.$value);
-			this.render(this.$value, this.$info, this.$color);
+			this.render(this.$value, this.$info, this.$color, this.$price);
 		}
 	}	
 	customElements.define("com-demo-gauge", Box);

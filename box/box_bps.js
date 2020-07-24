@@ -39,7 +39,8 @@
 					detail: {
 						properties: {
 							color: this.color,
-							value: this.value
+							value: this.value,
+							value: this.price
 						}
 					}
 			}));
@@ -58,6 +59,14 @@
 		}
 
 		get value() {
+			return this._shadowRoot.getElementById("bps_value").value;
+		}
+
+		set price(newPrice) {
+			this._shadowRoot.getElementById("bps_value").value = newPrice;
+		}
+
+		get price() {
 			return this._shadowRoot.getElementById("bps_value").value;
 		}
 	}

@@ -90,6 +90,22 @@
 			"returnType": "string",
 			"description": "Returns the background color.",
 			"body": "return this.color;"
+        },
+        "setPrice": {
+			"description": "Sets the background color.",
+			"parameters": [
+				{
+					"name": "newPrice",
+					"type": "string",
+					"description": "The new background price"
+				}
+			],
+			"body": "this.price = newPrice;"
+		},
+		"getPrice": {
+			"returnType": "string",
+			"description": "Returns the background price.",
+			"body": "return this.price;"
 		}
     },
     "events": {
