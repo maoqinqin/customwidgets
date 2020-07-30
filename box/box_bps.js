@@ -35,6 +35,8 @@
 
 		_submit(e) {
 			e.preventDefault();
+			var theDataSource = this.getDataSource();
+			console.log(theDataSource.getVariables());
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
