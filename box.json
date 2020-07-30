@@ -33,6 +33,11 @@
             "description": "Gauge value",
             "default": 0
         },
+        "price": {
+            "type": "number",
+            "description": "Gauge price",
+            "default": 800
+        },
         "info": {
             "type": "string",
             "description": "Gauge info",
@@ -92,18 +97,18 @@
 			"body": "return this.color;"
         },
         "setPrice": {
-			"description": "Sets the background color.",
+			"description": "Sets the background price.",
 			"parameters": [
 				{
 					"name": "newPrice",
-					"type": "string",
+					"type": "number",
 					"description": "The new background price"
 				}
 			],
 			"body": "this.price = newPrice;"
 		},
 		"getPrice": {
-			"returnType": "string",
+			"returnType": "number",
 			"description": "Returns the background price.",
 			"body": "return this.price;"
 		}

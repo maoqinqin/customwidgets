@@ -97,6 +97,10 @@
 		    end_xy = this.polar_to_cartesian(x, y, radius, start_angle);
 		    return "M " + start_xy[0] + " " + start_xy[1] + " A " + radius + " " + radius + " 0 0 0 " + end_xy[0] + " " + end_xy[1];
 		  };
+
+		  onResultChanged(value){
+			  console.log('onResultChanged', value);
+		  }
 		  
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
