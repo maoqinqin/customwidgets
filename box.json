@@ -116,6 +116,12 @@
     "events": {
         "onClick": {
             "description": "Called when the user clicks the Box."
+        },
+        "onSelect": {
+            "description": "Called when the user select the Box."
+        },
+        "onResultChanged": {
+            "description": "Called when the user changed the Box."
         }
     }
 }
